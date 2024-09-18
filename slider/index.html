@@ -1,0 +1,87 @@
+
+      
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+
+
+        .swiper {
+            width: 600px;
+            height: 300px;
+            margin-top: 70px;
+           
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: white;
+            background: #009688;
+        }
+
+        .title{
+            text-align: center;
+            color: brown;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Slider</h1>
+    </div>
+
+<div class="swiper">
+   
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="image">
+                <img src="image/file-6113d5f8845dc.jpeg" alt="" style="width: 100%; height:80vh ;">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="image">
+                <img src="image/Google-Image-Search-news-Gear-GettyImages-824179306.jpg" alt="" style="width: 100%; height:80vh ;">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="image">
+                <img src="image/images.jpg" alt="" style="width: 100%; height:80vh ;">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+$(document).ready(function(){
+    const swiper = new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+    <script src="css/jquery.min.js"></script>
+
+
+    
+</body>
+</html>
